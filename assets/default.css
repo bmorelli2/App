@@ -49,7 +49,6 @@ nav{
 
 .socialmedia a i{
   color: #666666;
-  
 }
 
 /*SECTION STUFF HERE*/
@@ -57,7 +56,7 @@ nav{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  max-height: 1024px;
+  
 }
 
 .sect-welcome{
@@ -212,6 +211,7 @@ nav{
 }
 .section-darkpink{
   background-color: #d09690;
+  min-height:;
 }
 
 .header-portfolio{
@@ -223,4 +223,51 @@ nav{
   font-family: 'Archivo Black', sans-serif;
   color: #444444;
   flex: 1 1 auto;
+}
+
+.gallery {
+    border: 1px solid #ccc;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
